@@ -20,10 +20,9 @@ while True:
 
     if guess<number:
         print('Try lower')
-
-    t3=time.time()
+        t3=time.time()
     if t3-t1>300:
         print('Game over')
         break
 
-    
+
