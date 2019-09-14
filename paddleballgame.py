@@ -2,11 +2,11 @@ from tkinter import*
 import random
 import time
 print(3)
-time.sleep(1)
+time.sleep(0.1)
 print(2)
-time.sleep(1)
+time.sleep(0.1)
 print(1)
-time.sleep(1)
+time.sleep(0.1)
 t1=time.time()
 class Ball:
     def __init__(self,canvas,paddle,color):
@@ -50,7 +50,7 @@ class Ball:
 class Paddle:
     def __init__(self,canvas,color):
         self.canvas=canvas
-        self.id=canvas.create_rectangle(0,0,100,10,fill=color)
+        self.id=canvas.create_rectangle(0,0,200,10,fill=color)
         self.canvas.move(self.id,200,300)
         self.x=0
         self.y=0
@@ -103,15 +103,14 @@ canvas.pack()
 tk.update()
 
 paddle=Paddle(canvas,'blue')
-ball=Ball(canvas,paddle,'red')
-
-print('正在加载游戏')
-time.sleep(1)
+ball1=Ball(canvas,paddle,'red')
+ball2=Ball(canvas,paddle,'red')
 print('Start Game!')
 
 while True:
-    if ball.hit_bottom==False:
-        ball.draw()
+    if ball1.hit_bottom==False and ball2.hit_bottom==False:
+        ball1.draw()
+        ball2.draw()
         paddle.draw()
     else:
         t2=time.time()
