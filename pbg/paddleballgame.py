@@ -1,6 +1,7 @@
 from tkinter import*
 import random
 import time
+import sys
 t1=time.time()
 class Ball:
     def __init__(self,canvas,paddle,color):
@@ -118,7 +119,7 @@ while True:
         logtime=time.asctime()
         log='\n'+str(logtime)+'   '+str(ball1.num)+'   '+str(t2-t1)+'   False'+'\n'
 
-        file=open('game.txt','a')
+        file=open('log.txt','a')
         file.write(log)
         file.close()
         a=PhotoImage(file='gameover.gif')
@@ -126,17 +127,18 @@ while True:
 
 
 
+
     if ball1.num>=5:
         t2=time.time()
-        print('You are win!')
         logtime=time.asctime()
         log='\n'+str(logtime)+'   '+str(5)+'   '+str(t2-t1)+'   True'+'\n'
 
-        file=open('game.txt','a')
+        file=open('log.txt','a')
         file.write(log)
         file.close()
         b=PhotoImage(file='win.gif')
         canvas.create_image(0,0,anchor=NW,image=b)
+
 
 
 
