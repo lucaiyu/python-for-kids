@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import sys
 def moon_weight():
     print('Plsase enter your current Earth weight(kg)')

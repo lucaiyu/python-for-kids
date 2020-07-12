@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 another_variable=100
 def variable_test():
     first_variable=10
@@ -11,4 +11,4 @@ def variable_test():
 
 
 
-print(variable_test())    
+print(variable_test())

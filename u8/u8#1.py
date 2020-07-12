@@ -1,4 +1,5 @@
-class Giraffes:
+
+#!/usr/bin/env python3
     def left_forward(self):
         print('left foot forward')
 

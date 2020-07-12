@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 ninjas=5
 if ninjas<50 and ninjas>=30:
     print('太多了')

@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 def spaceship_building(cans):
     total_cans=0
     weeks=53

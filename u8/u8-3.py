@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 class Giraffes:
     def __init__(self,spots):
         self.giraffe_spots=spots

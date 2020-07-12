@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def varible_test():
     first_variale=20
     second_variable=20
