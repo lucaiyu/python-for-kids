@@ -104,11 +104,9 @@ tk.wm_attributes('-topmost',1)
 canvas=Canvas(tk,width=500,height=400,bd=0,highlightthickness=0)
 canvas.pack()
 tk.update()
-
 paddle=Paddle(canvas,'blue')
 ball1=Ball(canvas,paddle,'red')
 print('Start Game!')
-
 while True:
     if ball1.hit_bottom==False:
         ball1.draw()
@@ -147,3 +145,4 @@ while True:
     tk.update_idletasks()
     tk.update()
     time.sleep(0.01)
+
